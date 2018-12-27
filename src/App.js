@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header';
 import TeamList from './components/TeamList';
 import PlayerList from './components/PlayerList';
+import InputForm from './components/InputForm';
 
 const App = () => (
   <React.Fragment>
@@ -18,6 +19,7 @@ const App = () => (
     //team name is passed down as a prop
       team="Team B"
     />
+    <InputForm />
   </React.Fragment>
 );
 
