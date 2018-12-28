@@ -4,8 +4,10 @@ import './App.css';
 // import components
 import Header from './components/Header';
 import TeamList from './components/TeamList';
+
+// import containers
 import PlayerList from './containers/PlayerListContainer';
-import InputForm from './components/InputForm';
+import InputForm from './containers/InputFormContainer';
 
 const App = () => (
   <React.Fragment>

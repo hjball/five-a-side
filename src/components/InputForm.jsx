@@ -11,6 +11,7 @@ class InputForm extends Component {
 
 		// binding the handleInput method
 		this.handleInput = this.handleInput.bind(this);
+		this.submitForm = this.submitForm.bind(this);
 	}
 
 	handleInput(e) {
@@ -18,15 +19,27 @@ class InputForm extends Component {
 		this.setState({ input: e.currentTarget.value });
 	}
 
+	submitForm(e) {
+		// prevent form from refreshing page
+		e.preventDefault();
+		// store input as a variable named data
+		let data = this.state.input;
+		console.log(data)
+		this.props.handleSubmit(data);
+
+		this.setState({ input: ""});
+
+	}
+
 	render() {
 		return (
-			<form >
+			<form onSubmit={ this.submitForm }>
 				<input
-				// displays the current value of the input inside state
-				value={ this.state.input }
+					// displays the current value of the input inside state
+					value={ this.state.input }
 
-				// handleInput method is fired every keystroke
-				onChange= { this.handleInput }/>
+					// handleInput method is fired every keystroke
+					onChange={ this.handleInput }/>
 				<button>Add</button>
 			</form>
 		)
