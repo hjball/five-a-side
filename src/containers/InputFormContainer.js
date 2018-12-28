@@ -4,6 +4,12 @@ import InputForm from '../components/InputForm';
 
 import { addPlayer } from '../data/actions/state';
 
+const mapStateToProps = ( state ) => {
+	return {
+		players: state.players
+	}
+};
+
 const mapDispatchToProps = ( dispatch ) => {
 	return {
 		handleSubmit: data => {
@@ -14,4 +20,4 @@ const mapDispatchToProps = ( dispatch ) => {
 	}
 };
 
-export default connect(null, mapDispatchToProps)(InputForm);
+export default connect(mapStateToProps, mapDispatchToProps)(InputForm);

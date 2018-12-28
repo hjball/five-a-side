@@ -9,7 +9,7 @@ class InputForm extends Component {
 			input: "",
 		};
 
-		// binding the handleInput method
+		// binding the methods
 		this.handleInput = this.handleInput.bind(this);
 		this.submitForm = this.submitForm.bind(this);
 	}
@@ -22,25 +22,29 @@ class InputForm extends Component {
 	submitForm(e) {
 		// prevent form from refreshing page
 		e.preventDefault();
+
 		// store input as a variable named data
 		let data = this.state.input;
-		console.log(data)
+
+		// call handleSubmit function and pass along data
 		this.props.handleSubmit(data);
 
+		// then reset input to an empty string
 		this.setState({ input: ""});
-
 	}
 
 	render() {
 		return (
 			<form onSubmit={ this.submitForm }>
 				<input
-					// displays the current value of the input inside state
+					// display the current value of the input inside state
 					value={ this.state.input }
 
 					// handleInput method is fired every keystroke
 					onChange={ this.handleInput }/>
-				<button>Add</button>
+
+				{/* check number of players added is less than 10 (starting at zero index)*/}
+				{ this.props.players.length < 10 ? <button>Add</button> : null }
 			</form>
 		)
 	}
