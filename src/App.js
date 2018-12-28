@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 
-//import components
+// import components
 import Header from './components/Header';
 import TeamList from './components/TeamList';
-import PlayerList from './components/PlayerList';
+import PlayerList from './containers/PlayerListContainer';
 import InputForm from './components/InputForm';
 
 const App = () => (
