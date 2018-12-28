@@ -33,8 +33,40 @@ const initial = {
 			player: "Tom England",
 		},
 	],
-	teamA: [],
-	teamB: [],
+	teamA: [
+		{
+			player: "Henry Ball",
+		},
+		{
+			player: "Jake Bufton",
+		},
+		{
+			player: "Harry Angus",
+		},
+		{
+			player: "Joe Watson",
+		},
+		{
+			player: "Pete Weber",
+		},
+	],
+	teamB: [
+		{
+			player: "Alex Fogg",
+		},
+		{
+			player: "Joe Brooks",
+		},
+		{
+			player: "Fergus Horsepool",
+		},
+		{
+			player: "George Angus",
+		},
+		{
+			player: "Tom England",
+		},
+	],
 };
 
 export default initial;

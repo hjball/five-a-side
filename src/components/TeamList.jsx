@@ -1,11 +1,14 @@
 import React from 'react';
 
-// team name is recieved as a prop
-const TeamList = ({ team }) => (
+// destructured props into team, teamA, and teamB
+const TeamList = ({ team, teamA, teamB }) => (
 	<div>
 		<h2>{ team }</h2>
 		<ul>
-			<li>Player 1</li>
+		{/* iterate over correct team and render a list item containing player */}
+		{ (team === "Team A" ? teamA : teamB).map((item, index) => (
+			<li key={ index }>{ item.player }</li>
+		))}
 		</ul>
 	</div>
 );
