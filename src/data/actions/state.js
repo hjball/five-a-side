@@ -5,3 +5,9 @@ export const addPlayer = data => {
 		input: data,
 	}
 };
+
+export const assignPlayers = () => {
+	return {
+		type: 'assignPlayers',
+	}
+};

@@ -8,6 +8,7 @@ import Header from './components/Header';
 import PlayerList from './containers/PlayerListContainer';
 import InputForm from './containers/InputFormContainer';
 import TeamList from './containers/TeamListContainer';
+import Controller from './containers/ControllerContainer';
 
 const App = () => (
   <React.Fragment>
@@ -22,6 +23,7 @@ const App = () => (
       team="Team B"
     />
     <InputForm />
+    <Controller />
   </React.Fragment>
 );
 
