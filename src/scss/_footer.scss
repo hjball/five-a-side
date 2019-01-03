@@ -1,0 +1,17 @@
+footer {
+	padding: 2rem;
+	margin-top: 2rem;
+	
+	hr {
+		margin: 0 1rem;
+		border: 0;
+		height: 1px;
+		background: lightgrey;
+	}
+
+	p {
+		display: flex;
+		justify-content: center;
+		padding: 1.5rem;
+	}
+}

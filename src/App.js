@@ -3,6 +3,7 @@ import './App.css';
 
 // import components
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 // import containers
 import PlayerList from './containers/PlayerListContainer';
@@ -26,6 +27,7 @@ const App = () => (
         />
     <InputForm />
     <Controller />
+    <Footer />
   </div>
 );
 

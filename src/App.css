@@ -1,3 +1,16 @@
+footer {
+  padding: 2rem;
+  margin-top: 2rem; }
+  footer hr {
+    margin: 0 1rem;
+    border: 0;
+    height: 1px;
+    background: lightgrey; }
+  footer p {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem; }
+
 .controller {
   padding: 0 3rem 3rem 3rem;
   display: flex;
@@ -89,6 +102,8 @@ header {
     grid-area: 4 / 3 / 5 / 4; }
   .main .team-list-teamB {
     grid-area: 4 / 4 / 5 / 5; }
+  .main footer {
+    grid-area: 5 / 1 / 6 / 6; }
 
 .main {
   font-family: 'Work Sans', sans-serif; }
