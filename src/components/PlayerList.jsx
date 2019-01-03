@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PlayerList = ({ players }) => (
-	<div>
+	<div className="player-list">
 		<h2>Players</h2>
 		<ul>
 		{/* iterate over players array and render a list item containing player */}

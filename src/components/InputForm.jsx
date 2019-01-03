@@ -35,7 +35,9 @@ class InputForm extends Component {
 
 	render() {
 		return (
-			<form onSubmit={ this.submitForm }>
+			<form 
+				onSubmit={ this.submitForm }
+				className="input-form">
 				<input
 					// display the current value of the input inside state
 					value={ this.state.input }

@@ -11,20 +11,22 @@ import TeamList from './containers/TeamListContainer';
 import Controller from './containers/ControllerContainer';
 
 const App = () => (
-  <React.Fragment>
+  <div className="main">
     <Header />
-    <TeamList
-    // team name is passed down as a prop
-      team="Team A"
-    />
-    <PlayerList />
-    <TeamList
-    // team name is passed down as a prop
-      team="Team B"
-    />
+        <TeamList
+        // team name is passed down as a prop
+          team="Team A"
+          className="team-list-teamA"
+        />
+        <PlayerList />
+        <TeamList
+        // team name is passed down as a prop
+          team="Team B"
+          className="team-list-teamB"
+        />
     <InputForm />
     <Controller />
-  </React.Fragment>
+  </div>
 );
 
 export default App;

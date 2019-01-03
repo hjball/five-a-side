@@ -1,1 +1,27 @@
+* {
+  padding: 0;
+  margin: 0; }
 
+.main {
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-rows: auto;
+  display: grid; }
+  .main header {
+    grid-area: 1 / 1 / 2 / 6; }
+  .main .team-list-teamA {
+    grid-area: 2 / 2 / 3 / 3; }
+  .main .player-list {
+    grid-area: 2 / 3 / 3 / 4; }
+  .main .team-list-teamB {
+    grid-area: 2 / 4 / 3 / 5; }
+  .main .input-form {
+    grid-area: 3 / 3 / 4 / 4; }
+  .main .controller {
+    grid-area: 4 / 3 / 5 / 4; }
+  .main header,
+  .main .team-list-teamA,
+  .main .player-list,
+  .main .team-list-teamB,
+  .main .input-form,
+  .main .controller {
+    border: 1px solid lightgrey; }
