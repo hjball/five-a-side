@@ -5,7 +5,7 @@ const TeamList = ({ team, teamA, teamB }) => (
 	<div>
 		<h2>{ team }</h2>
 		<ul>
-		{/* iterate over correct team and render a list item containing player */}
+		{/* iterate over correct team and render a list item containing player name */}
 		{ (team === "Team A" ? teamA : teamB).map((item, index) => (
 			<li key={ index }>{ item.player }</li>
 		))}
