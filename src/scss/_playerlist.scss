@@ -1,8 +1,16 @@
 .player-list {
 	padding: 1rem;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
 
 	ul {
 		list-style: none;
+	}
+
+	h2 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0.5rem;
 	}
 
 	li {

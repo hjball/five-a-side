@@ -29,9 +29,9 @@ const initial = {
 		{
 			player: "George Angus",
 		},
-		{
-			player: "Tom England",
-		},
+		// {
+		// 	player: "Tom England",
+		// },
 	],
 	teamA: [],
 	teamB: [],

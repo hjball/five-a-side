@@ -1,0 +1,31 @@
+form {
+	padding: 5rem 3rem 1rem 3rem;
+	display: flex;
+	justify-content: center;
+
+	input {
+		width: 15rem;
+		height: 2rem;
+		font-size: 1rem;
+		border: 1px solid lightgrey;
+		border-radius: 5px 0 0 5px;
+		padding-left: 0.5rem;
+	}
+
+	input:focus {
+		border: 1px solid lightblue;
+		outline: none;
+	}
+
+	button {
+		width: 3rem;
+		border-radius: 0 5px 5px 0;
+		background: #457B9D;
+		border: none;
+		color: white;
+	}
+
+	button:focus {
+		outline: none;
+	}
+}

@@ -12,6 +12,14 @@
 		grid-area: 1 / 1 / 2 / 6;
 	}
 
+	.input-form {
+		grid-area: 2 / 2 / 3 / 5;
+	}
+
+	.controller {
+		grid-area: 3 / 3 / 4 / 4;
+	}
+
 	.team-list-teamA {
 		grid-area: 4 / 2 / 5 / 3;
 	}
@@ -23,23 +31,4 @@
 	.team-list-teamB {
 		grid-area: 4 / 4 / 5 / 5;
 	}
-
-	.input-form {
-		grid-area: 2 / 3 / 3 / 4;
-	}
-
-	.controller {
-		grid-area: 3 / 3 / 4 / 4;
-	}
-
-	header, 
-	.team-list-teamA, 
-	.player-list, 
-	.team-list-teamB, 
-	.input-form, 
-	.controller {
-		border: 1px solid lightgrey;
-	}
-
-
 }

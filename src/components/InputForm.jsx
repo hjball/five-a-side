@@ -15,23 +15,36 @@ class InputForm extends Component {
 	}
 
 	handleInput(e) {
-		// updates the state to the current user input
-		this.setState({ input: e.currentTarget.value });
+		if(this.state.input.length < 20) {
+
+			// updates the state to the current user input
+			this.setState({ input: e.currentTarget.value });
+
+		} else {
+			console.log("Error, name too long");
+		}
 	}
 
 	submitForm(e) {
 		// prevent form from refreshing page
 		e.preventDefault();
 
-		// store input as a variable named data
-		let data = this.state.input;
+		// check number of players added is less than 10 (starting at zero index)
+		if(this.props.players.length < 10) {
+			
+				// store input as a variable named data
+				let data = this.state.input;
 
-		// call handleSubmit function and pass along data
-		this.props.handleSubmit(data);
+				// call handleSubmit function and pass along data
+				this.props.handleSubmit(data);
 
-		// then reset input to an empty string
-		this.setState({ input: ""});
-	}
+				// then reset input to an empty string
+				this.setState({ input: ""});
+
+		} else {
+			console.log("Error, you already have ten players");
+		}
+	};
 
 	render() {
 		return (
@@ -44,9 +57,7 @@ class InputForm extends Component {
 
 					// handleInput method is fired every keystroke
 					onChange={ this.handleInput }/>
-
-				{/* check number of players added is less than 10 (starting at zero index)*/}
-				{ this.props.players.length < 10 ? <button>Add</button> : null }
+				<button>Add</button>
 			</form>
 		)
 	}
