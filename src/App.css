@@ -1,3 +1,24 @@
+.team-list-teamA,
+.team-list-teamB {
+  padding: 1rem;
+  margin: 0.5rem; }
+  .team-list-teamA ul,
+  .team-list-teamB ul {
+    list-style: none; }
+
+.player-list {
+  padding: 1rem; }
+  .player-list ul {
+    list-style: none; }
+  .player-list li {
+    display: flex;
+    justify-content: space-between; }
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -28,8 +49,3 @@
 
 .main {
   font-family: 'Work Sans', sans-serif; }
-
-header {
-  padding: 1rem;
-  display: flex;
-  justify-content: center; }

@@ -1,0 +1,12 @@
+.player-list {
+	padding: 1rem;
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: flex;
+		justify-content: space-between;
+	}
+}

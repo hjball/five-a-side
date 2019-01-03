@@ -1,1 +1,9 @@
-_teamlist.scss
+.team-list-teamA, 
+.team-list-teamB {
+	padding: 1rem;
+	margin: 0.5rem;
+	
+	ul {
+		list-style: none;
+	}
+}
