@@ -1,9 +1,10 @@
 .team-list-teamA, 
 .team-list-teamB {
 	padding: 1rem;
-	margin: 0.5rem;
+	margin: 1.5rem 0.5rem;
 	border: 1px solid lightgrey;
 	border-radius: 5px;
+	height: 13rem;
 
 	h2 {
 		display: flex;
@@ -13,5 +14,15 @@
 
 	ul {
 		list-style: none;
+	}
+
+	li {
+		margin: 0.2rem 0;
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background: lightgrey;
 	}
 }

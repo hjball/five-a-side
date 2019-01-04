@@ -65,9 +65,10 @@ footer {
 .team-list-teamA,
 .team-list-teamB {
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1.5rem 0.5rem;
   border: 1px solid lightgrey;
-  border-radius: 5px; }
+  border-radius: 5px;
+  height: 13rem; }
   .team-list-teamA h2,
   .team-list-teamB h2 {
     display: flex;
@@ -76,11 +77,20 @@ footer {
   .team-list-teamA ul,
   .team-list-teamB ul {
     list-style: none; }
+  .team-list-teamA li,
+  .team-list-teamB li {
+    margin: 0.2rem 0; }
+  .team-list-teamA hr,
+  .team-list-teamB hr {
+    border: 0;
+    height: 1px;
+    background: lightgrey; }
 
 .player-list {
   padding: 1rem;
   border: 1px solid lightgrey;
-  border-radius: 5px; }
+  border-radius: 5px;
+  height: 18.5rem; }
   .player-list ul {
     list-style: none; }
   .player-list h2 {
@@ -89,7 +99,13 @@ footer {
     margin-bottom: 0.5rem; }
   .player-list li {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0; }
+  .player-list hr {
+    border: 0;
+    height: 1px;
+    background: lightgrey; }
 
 header {
   padding: 1rem;

@@ -7,7 +7,10 @@ const TeamList = ({ team, teamA, teamB, className }) => (
 		<ul>
 		{/* iterate over correct team and render a list item containing player name */}
 		{ (team === "Team A" ? teamA : teamB).map((item, index) => (
-			<li key={ index }>{ item.player }</li>
+			<React.Fragment>
+				<li key={ index }>{ item.player }</li>
+				<hr />
+			</React.Fragment>
 		))}
 		</ul>
 	</div>

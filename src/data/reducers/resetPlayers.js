@@ -4,5 +4,7 @@ export default (state, action) => {
 		...state,
 		// reset players array to be empty
 		players: [],
+		teamA: [],
+		teamB: [],
 	}
 };

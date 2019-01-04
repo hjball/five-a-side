@@ -6,12 +6,15 @@ const PlayerList = ({ players, handleDelete }) => (
 		<ul>
 		{/* iterate over players array and render a list item containing player */}
 		{ players.map((item, index) => (
-			<li key={ index }>{ item.player }
-				<ion-icon 
-					name="close-circle"
-					onClick={ () => handleDelete(item.id) }>
-				</ion-icon>
-			</li>
+			<React.Fragment>
+				<li key={ index }>{ item.player }
+					<ion-icon 
+						name="close-circle"
+						onClick={ () => handleDelete(item.id) }>
+					</ion-icon>
+				</li>
+				<hr />
+			</React.Fragment>
 		))}
 		</ul>
 	</div>
