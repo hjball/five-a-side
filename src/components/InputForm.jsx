@@ -72,7 +72,10 @@ class InputForm extends Component {
 						onChange={ this.handleInput }/>
 					<button>Add</button>
 				</form>
-				<p>{ this.state.error }</p>
+				<div className="error-messages">
+					{ this.state.error ? <p>{ this.state.error }</p> : null }
+					{ this.props.error ? <p>{ this.props.error }</p> : null }
+				</div>
 			</div>
 		)
 	}

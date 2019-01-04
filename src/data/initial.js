@@ -44,6 +44,7 @@ const initial = {
 	],
 	teamA: [],
 	teamB: [],
+	error: "",
 };
 
 export default initial;

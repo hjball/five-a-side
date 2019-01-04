@@ -6,5 +6,6 @@ export default (state, action) => {
 		players: [],
 		teamA: [],
 		teamB: [],
+		error: "",
 	}
 };
