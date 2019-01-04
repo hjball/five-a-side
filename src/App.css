@@ -29,11 +29,11 @@ footer {
   .controller button:active {
     background-color: #457BBB; }
 
-form {
-  padding: 5rem 3rem 1rem 3rem;
+.input-form form {
+  padding: 5rem 3rem 0.5rem 3rem;
   display: flex;
   justify-content: center; }
-  form input {
+  .input-form form input {
     width: 15rem;
     height: 2rem;
     font-size: 1rem;
@@ -42,10 +42,10 @@ form {
     border-right: none;
     border-radius: 5px 0 0 5px;
     padding-left: 0.5rem; }
-  form input:focus {
+  .input-form form input:focus {
     border: 1px solid lightblue;
     outline: none; }
-  form button {
+  .input-form form button {
     width: 3rem;
     border-radius: 0 5px 5px 0;
     background: #457B9D;
@@ -53,8 +53,14 @@ form {
     color: white;
     font-weight: bold;
     font-size: 0.8rem; }
-  form button:focus {
+  .input-form form button:focus {
     outline: none; }
+
+.input-form p {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  height: 1rem; }
 
 .team-list-teamA,
 .team-list-teamB {
