@@ -11,3 +11,16 @@ export const assignPlayers = () => {
 		type: 'assignPlayers',
 	}
 };
+
+export const resetPlayers = () => {
+	return {
+		type: 'resetPlayers',
+	}
+};
+
+export const deletePlayer = data => {
+	return {
+		type: 'deletePlayer',
+		id: data,
+	}
+};

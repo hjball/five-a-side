@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => (
 	<header>
-		<h1>Five-A-Side App</h1>
+		<h1>Five-A-Side</h1>
 	</header>
 );
 

@@ -5,14 +5,20 @@
 
 	button {
 		padding: 0.5rem 1rem;
+		margin: 0.5rem;
 		border-radius: 5px;
-		background-color: #457B9D;
+		background-color: #457B9A;
 		border: none;
 		color: white;
 		font-size: 0.8rem;
+		font-weight: bold;
 	}
 
 	button:focus {
 		outline: none;
+	}
+
+	button:active {
+		background-color: #457BBB;
 	}
 }

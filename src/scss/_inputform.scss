@@ -7,6 +7,7 @@ form {
 		width: 15rem;
 		height: 2rem;
 		font-size: 1rem;
+		font-weight: bold;
 		border: 1px solid lightgrey;
 		border-right: none;
 		border-radius: 5px 0 0 5px;
@@ -24,6 +25,8 @@ form {
 		background: #457B9D;
 		border: none;
 		color: white;
+		font-weight: bold;
+		font-size: 0.8rem;
 	}
 
 	button:focus {

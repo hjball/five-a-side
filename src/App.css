@@ -17,13 +17,17 @@ footer {
   justify-content: center; }
   .controller button {
     padding: 0.5rem 1rem;
+    margin: 0.5rem;
     border-radius: 5px;
-    background-color: #457B9D;
+    background-color: #457B9A;
     border: none;
     color: white;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    font-weight: bold; }
   .controller button:focus {
     outline: none; }
+  .controller button:active {
+    background-color: #457BBB; }
 
 form {
   padding: 5rem 3rem 1rem 3rem;
@@ -33,6 +37,7 @@ form {
     width: 15rem;
     height: 2rem;
     font-size: 1rem;
+    font-weight: bold;
     border: 1px solid lightgrey;
     border-right: none;
     border-radius: 5px 0 0 5px;
@@ -45,7 +50,9 @@ form {
     border-radius: 0 5px 5px 0;
     background: #457B9D;
     border: none;
-    color: white; }
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem; }
   form button:focus {
     outline: none; }
 

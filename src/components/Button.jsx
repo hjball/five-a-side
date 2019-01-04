@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = ({ text, assignPlayers }) => (
+const Button = ({ text, handleClick }) => (
 	<button
-		onClick={ assignPlayers }
+		onClick={ handleClick }
 	>{ text }</button>
 );
 
