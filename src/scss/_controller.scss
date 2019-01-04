@@ -5,8 +5,11 @@
 
 	button {
 		padding: 0.5rem 1rem;
-		border: 1px solid lightgrey;
 		border-radius: 5px;
+		background-color: #457B9D;
+		border: none;
+		color: white;
+		font-size: 0.8rem;
 	}
 
 	button:focus {

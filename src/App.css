@@ -17,8 +17,11 @@ footer {
   justify-content: center; }
   .controller button {
     padding: 0.5rem 1rem;
-    border: 1px solid lightgrey;
-    border-radius: 5px; }
+    border-radius: 5px;
+    background-color: #457B9D;
+    border: none;
+    color: white;
+    font-size: 0.8rem; }
   .controller button:focus {
     outline: none; }
 
@@ -31,6 +34,7 @@ form {
     height: 2rem;
     font-size: 1rem;
     border: 1px solid lightgrey;
+    border-right: none;
     border-radius: 5px 0 0 5px;
     padding-left: 0.5rem; }
   form input:focus {
