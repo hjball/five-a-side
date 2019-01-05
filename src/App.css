@@ -89,6 +89,15 @@ footer {
     height: 1px;
     background: lightgrey; }
 
+@media screen and (max-width: 480px) {
+  .team-list-teamA {
+    margin: 1rem 0.25rem 1rem 0; }
+  .team-list-teamB {
+    margin: 1rem 0 1rem 0.25rem; }
+  .team-list-teamA,
+  .team-list-teamB {
+    font-size: 0.8rem; } }
+
 .player-list {
   padding: 1rem;
   border: 1px solid lightgrey;
@@ -140,6 +149,24 @@ header {
     grid-area: 4 / 4 / 5 / 5; }
   .main footer {
     grid-area: 5 / 1 / 6 / 6; }
+
+@media screen and (max-width: 480px) {
+  .main {
+    grid-template-columns: 5% 45% 45% 5%; }
+    .main header {
+      grid-area: 1 / 1 / 2 / 5; }
+    .main .input-form {
+      grid-area: 2 / 2 / 3 / 4; }
+    .main .controller {
+      grid-area: 3 / 2 / 4 / 4; }
+    .main .player-list {
+      grid-area: 4 / 2 / 5 / 4; }
+    .main .team-list-teamA {
+      grid-area: 5 / 2 / 6 / 3; }
+    .main .team-list-teamB {
+      grid-area: 5 / 3 / 6 / 4; }
+    .main footer {
+      grid-area: 6 / 2 / 7 / 4; } }
 
 .main {
   font-family: 'Work Sans', sans-serif; }
