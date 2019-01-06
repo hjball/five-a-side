@@ -1,4 +1,5 @@
-// returns an action containing the type and input data
+// returns an action containing the type along with data when required
+
 export const addPlayer = data => {
 	return {
 		type: 'addPlayer',

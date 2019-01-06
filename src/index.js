@@ -12,10 +12,12 @@ import { Provider } from 'react-redux';
 import reducer from './data/reducer';
 import initial from './data/initial';
 
+// setup store along with the reducer and initial
 const store = createStore(
 	reducer,
 	initial,
-	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+	// redux dev tools for development and testing
+	// window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
 ReactDOM.render(

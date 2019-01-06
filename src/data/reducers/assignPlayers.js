@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 export default (state) => {
 	
+	// check number of players is equal to ten
 	if(state.players.length === 10){
 
 		// shuffle the array of players, divide into two equal arrays of five players, and save to a variable named randomise 
@@ -15,6 +16,7 @@ export default (state) => {
 			teamA: randomise[0],
 			// set teamB to be the second equal array of players saved to randomise
 			teamB: randomise[1],
+			// reset error message
 			error: "",
 		}
 	} else {
