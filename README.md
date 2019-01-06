@@ -39,7 +39,7 @@ You can now view the application by navigating to http://localhost3000 in your b
 
 ## Approach
 
-Intially I set out by sketching a rough wireframe of the MVP, before transfering the layout into Sketch and creating a simple design from which I based my project.
+Initially I set out by sketching a rough wireframe of the MVP, before transferring the layout into Sketch and creating a simple design from which I based my project.
 
 After deciding on React and Redux as main libraries for my project (mainly because I wanted to challenge myself with using Redux), I starting building the basic functionality of the MVP, reaching for the lodash JavaScript library to handle the randomising and sorting of players into teams.
 

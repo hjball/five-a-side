@@ -1,3 +1,4 @@
+// import the reducer functions
 import addPlayer from './reducers/addPlayer';
 import assignPlayers from './reducers/assignPlayers';
 import resetPlayers from './reducers/resetPlayers';

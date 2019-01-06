@@ -1,4 +1,5 @@
-let id = 9;
+// setup id as a variable starting at 0
+let id = 0;
 
 export default (state, action) => {
 	

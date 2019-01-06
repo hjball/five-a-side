@@ -1,6 +1,5 @@
 import React from 'react';
 
-// destructured props into team, teamA, and teamB
 const TeamList = ({ team, teamA, teamB, className }) => (
 	<div className={ className }>
 		<h2>{ team }</h2>

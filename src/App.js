@@ -1,4 +1,6 @@
 import React from 'react';
+
+// import CSS
 import './App.css';
 
 // import components
@@ -15,13 +17,13 @@ const App = () => (
   <div className="main">
     <Header />
         <TeamList
-        // team name is passed down as a prop
+        // team name and class name are passed down as props
           team="Team A"
           className="team-list-teamA"
         />
         <PlayerList />
         <TeamList
-        // team name is passed down as a prop
+        // team name and class name are passed down as props
           team="Team B"
           className="team-list-teamB"
         />
