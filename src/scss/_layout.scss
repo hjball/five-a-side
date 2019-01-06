@@ -33,11 +33,11 @@
 	}
 
 	footer {
-		grid-area: 5 / 1 / 6 / 6;
+		grid-area: 5 / 2 / 6 / 5;
 	}
 }
 
-@media screen and (max-width: $minWidth) {
+@media only screen and (max-width: $minWidth) {
 	.main {
 		grid-template-columns: 5% 45% 45% 5%;
 
@@ -68,5 +68,17 @@
 		footer {
 			grid-area: 6 / 2 / 7 / 4;
 		}
+	}
+}
+
+@media only screen and (min-width: $medWidth) {
+	.main {
+		grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+	}
+}
+
+@media only screen and (min-width: $maxWidth) {
+	.main {
+		grid-template-columns: 20% 20% 20% 20% 20%;
 	}
 }
