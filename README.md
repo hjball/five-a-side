@@ -45,7 +45,7 @@ After deciding on React and Redux as main libraries for my project (mainly becau
 
 Once I had all of the basic features in place I started to add styling, using a combination of Sass and Gulp to manage my workflow.
 
-Only after I had the styled MVP up and running did I start to add user experience tweaks, such as error handling, and explore the additional features of the brief.
+Only after I had the MVP up and running did I start to add user experience tweaks, such as error handling, and explore the additional features of the brief.
 
 ## Features:
 
