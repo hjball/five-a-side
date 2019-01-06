@@ -1,0 +1,43 @@
+.team-list-teamA, 
+.team-list-teamB {
+	padding: 1rem;
+	margin: 1.5rem 0.5rem;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	height: 13rem;
+
+	h2 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		margin: 0.2rem 0;
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background: lightgrey;
+	}
+}
+
+@media screen and (max-width: $minWidth) {
+	.team-list-teamA {
+		margin: 1rem 0.25rem 1rem 0;
+	}
+
+	.team-list-teamB {
+		margin: 1rem 0 1rem 0.25rem;
+	}
+
+	.team-list-teamA,
+	.team-list-teamB {
+		font-size: 0.8rem;
+	}
+}

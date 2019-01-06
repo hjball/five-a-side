@@ -1,1 +1,183 @@
+footer {
+  margin-top: 2rem; }
+  footer hr {
+    margin: 4rem 0 1rem 0;
+    border: 0;
+    height: 1px;
+    background: lightgrey; }
+  footer p {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    padding: 2rem; }
+  @media only screen and (max-width: 480px) {
+    footer hr {
+      margin: 2rem 0 1rem 0; } }
 
+.controller {
+  padding: 0 3rem 3rem 3rem;
+  display: flex;
+  justify-content: center; }
+  .controller button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: #457B9A;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold; }
+  .controller button:focus {
+    outline: none; }
+  .controller button:active {
+    background-color: #457BBB; }
+
+.input-form form {
+  padding: 5rem 3rem 0.5rem 3rem;
+  display: flex;
+  justify-content: center; }
+  .input-form form input {
+    width: 15rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding-left: 0.5rem; }
+  .input-form form input:focus {
+    border: 1px solid lightblue;
+    outline: none; }
+  .input-form form button {
+    padding: 0 1.5rem;
+    border-radius: 0 5px 5px 0;
+    background: #457B9D;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem; }
+  .input-form form button:focus {
+    outline: none; }
+
+.input-form p {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  height: 1rem; }
+
+.input-form .error-messages {
+  height: 2rem; }
+
+.team-list-teamA,
+.team-list-teamB {
+  padding: 1rem;
+  margin: 1.5rem 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 13rem; }
+  .team-list-teamA h2,
+  .team-list-teamB h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
+  .team-list-teamA ul,
+  .team-list-teamB ul {
+    list-style: none; }
+  .team-list-teamA li,
+  .team-list-teamB li {
+    margin: 0.2rem 0; }
+  .team-list-teamA hr,
+  .team-list-teamB hr {
+    border: 0;
+    height: 1px;
+    background: lightgrey; }
+
+@media screen and (max-width: 480px) {
+  .team-list-teamA {
+    margin: 1rem 0.25rem 1rem 0; }
+  .team-list-teamB {
+    margin: 1rem 0 1rem 0.25rem; }
+  .team-list-teamA,
+  .team-list-teamB {
+    font-size: 0.8rem; } }
+
+.player-list {
+  padding: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 18.5rem; }
+  .player-list ul {
+    list-style: none; }
+  .player-list h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
+  .player-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0; }
+  .player-list hr {
+    border: 0;
+    height: 1px;
+    background: lightgrey; }
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background: #457B9D; }
+  header h1 {
+    color: white; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.main {
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-rows: auto;
+  display: grid; }
+  .main header {
+    grid-area: 1 / 1 / 2 / 6; }
+  .main .input-form {
+    grid-area: 2 / 2 / 3 / 5; }
+  .main .controller {
+    grid-area: 3 / 3 / 4 / 4; }
+  .main .team-list-teamA {
+    grid-area: 4 / 2 / 5 / 3; }
+  .main .player-list {
+    grid-area: 4 / 3 / 5 / 4; }
+  .main .team-list-teamB {
+    grid-area: 4 / 4 / 5 / 5; }
+  .main footer {
+    grid-area: 5 / 2 / 6 / 5; }
+
+@media only screen and (max-width: 480px) {
+  .main {
+    grid-template-columns: 5% 45% 45% 5%; }
+    .main header {
+      grid-area: 1 / 1 / 2 / 5; }
+    .main .input-form {
+      grid-area: 2 / 2 / 3 / 4; }
+    .main .controller {
+      grid-area: 3 / 2 / 4 / 4; }
+    .main .player-list {
+      grid-area: 4 / 2 / 5 / 4; }
+    .main .team-list-teamA {
+      grid-area: 5 / 2 / 6 / 3; }
+    .main .team-list-teamB {
+      grid-area: 5 / 3 / 6 / 4; }
+    .main footer {
+      grid-area: 6 / 2 / 7 / 4; } }
+
+@media only screen and (min-width: 960px) {
+  .main {
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%; } }
+
+@media only screen and (min-width: 1260px) {
+  .main {
+    grid-template-columns: 20% 20% 20% 20% 20%; } }
+
+.main {
+  font-family: 'Work Sans', sans-serif; }

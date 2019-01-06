@@ -1,0 +1,29 @@
+.player-list {
+	padding: 1rem;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	height: 18.5rem;
+
+	ul {
+		list-style: none;
+	}
+
+	h2 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0.5rem;
+	}
+
+	li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0.2rem 0;
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background: lightgrey;
+	}
+}

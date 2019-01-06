@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Five-A-Side
 
-## Available Scripts
+A team selecting application created as part of the technical challenge for DevelopMe's Coding Fellowship.
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+### Requirements 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* NPM/Yarn
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Guide
 
-### `npm test`
+Before starting, ensure you have an up-to-date version of NPM or Yarn installed locally.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After checking your package manager is up-to-date, clone this GitHub repository and navigate to the correct directory from your terminal.
 
-### `npm run build`
+Once you're in the cloned directory, run the following commands:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependancies:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```bash
+$ npm install / $ yarn install
+```
+Run the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ npm start / $ yarn start
+```
 
-### `npm run eject`
+You can now view the application by navigating to http://localhost3000 in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Brief
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names (10 players = 2 teams of 5).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+>It's up to you how you implement this, with JavaScript, PHP, as a web page, or as an app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+>Optional advanced features might include: support for n-a-side, where a list of any length can be split into two teams support for balancing of the teams, where some measure of each player's rating is used to allocate teams fairly
 
-## Learn More
+## Approach
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Intially I set out by sketching a rough wireframe of the MVP, before transfering the layout into Sketch and creating a simple design from which I based my project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After deciding on React and Redux as main libraries for my project (mainly because I wanted to challenge myself with using Redux), I starting building the basic functionality of the MVP, reaching for the lodash JavaScript library to handle the randomising and sorting of players into teams.
 
-### Code Splitting
+Once I had all of the basic features in place I started to add styling, using a combination of Sass and Gulp to manage my workflow.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Only after I had the MVP up and running did I start to add user experience tweaks, such as error handling, and explore the additional features of the brief.
 
-### Analyzing the Bundle Size
+## Features:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* Add player names to a Players list
+* Delete players from the Players list
+* Randomly assign players into two equal Team lists
+* Reset the Players and Team lists
+* Error handling for names over 16 characters, attempting to add more than 10 players, and trying to assign teams with less than 10 players.
 
-### Making a Progressive Web App
+## Features Roadmap:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Support for team balancing
+* Support for n-a-side
+* Data persistence (API or Redux Persist)

@@ -1,0 +1,84 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.main {
+	grid-template-columns: 5% 30% 30% 30% 5%;
+	grid-template-rows: auto;
+	display: grid;
+
+	header {
+		grid-area: 1 / 1 / 2 / 6;
+	}
+
+	.input-form {
+		grid-area: 2 / 2 / 3 / 5;
+	}
+
+	.controller {
+		grid-area: 3 / 3 / 4 / 4;
+	}
+
+	.team-list-teamA {
+		grid-area: 4 / 2 / 5 / 3;
+	}
+
+	.player-list {
+		grid-area: 4 / 3 / 5 / 4;
+	}
+
+	.team-list-teamB {
+		grid-area: 4 / 4 / 5 / 5;
+	}
+
+	footer {
+		grid-area: 5 / 2 / 6 / 5;
+	}
+}
+
+@media only screen and (max-width: $minWidth) {
+	.main {
+		grid-template-columns: 5% 45% 45% 5%;
+
+		header {
+			grid-area: 1 / 1 / 2 / 5;
+		}
+
+		.input-form {
+			grid-area: 2 / 2 / 3 / 4;
+		}
+
+		.controller {
+			grid-area: 3 / 2 / 4 / 4;
+		}
+
+		.player-list {
+			grid-area: 4 / 2 / 5 / 4;
+		}
+
+		.team-list-teamA {
+			grid-area: 5 / 2 / 6 / 3;
+		}
+
+		.team-list-teamB {
+			grid-area: 5 / 3 / 6 / 4;
+		}
+
+		footer {
+			grid-area: 6 / 2 / 7 / 4;
+		}
+	}
+}
+
+@media only screen and (min-width: $medWidth) {
+	.main {
+		grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+	}
+}
+
+@media only screen and (min-width: $maxWidth) {
+	.main {
+		grid-template-columns: 20% 20% 20% 20% 20%;
+	}
+}
